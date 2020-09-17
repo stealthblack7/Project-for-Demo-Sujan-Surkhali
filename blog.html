@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog-Page</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script>
+    var i = 0; //start point
+    var images = [];
+    var time = 2500;
+
+
+    // Image List
+    images[0] = 'images/slider.jpg';
+    images[1] = 'images/slider1.jpg';
+    images[2] = 'images/slider2.jpg';
+    images[3] = 'images/slider3.jpg';
+    images[4] = 'images/slider4.jpg';
+    images[5] = 'images/slider5.jpg';
+    images[6] = 'images/slider6.jpg';
+    images[7] = 'images/slider7.jpg';
+    images[8] = 'images/slider8.jpg';
+    images[9] = 'images/slider9.jpg';
+    images[10] = 'images/slider10.jpg';
+    images[11] = 'images/slider11.jpg';
+    images[12] = 'images/slider12.jpg';
+    images[13] = 'images/slider13.jpg';
+    images[14] = 'images/slider14.jpg';
+    images[15] = 'images/slider15.jpg';
+    images[16] = 'images/slider16.jpg';
+    images[17] = 'images/slider17.jpg';
+    images[18] = 'images/slider18.jpg';
+    images[19] = 'images/slider19.jpg';
+    images[20] = 'images/slider20.jpg';
+    images[21] = 'images/slider21.jpg';
+    images[22] = 'images/slider22.jpg';
+    images[23] = 'images/slider23.jpg';
+
+   
+
+    //change Image
+    function changeImg(){
+      document.slide.src = images[i];
+
+      if(i < images.length - 1){
+        i++;
+      } else {
+        i = 0;
+      }
+      setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+
+
+   </script>
+  </head>
+  
+  <body>
+      
+     <div class="container">
+  <div class="main">
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png">
+        <h1>MY CREATION</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+<br>
+<br>
+
+
+      
+   <div class="bk">
+   <br> 
+  <h3>NEXT-GEN GAMING</h3>
+  <br>
+
+  <div class="nov">
+  <img name="slide" width="700" height="500">
+  <br> <br>
+  <div class="text">
+
+  <p>Nvidia revealed its new RTX 3000 line of Ampere-powered GPU earlier in the month--the RTX 3090, 3080, and 3070 cards. The new 3000 series is the second generation of RTX graphics cards that will run features like real-time ray tracing with much higher performance than current RTX cards.</p>
+  <br>
+  
+  <p>Watch Cyberpunk 2077 on NVIDIA GeForce RTX 30 Series <a href="moreinfo.html">{more}</a> </p>
+
+    </div>
+  </div>
+
+    <div class = "footer">
+    <br>
+    <j>NAUGHTY DOG, LLC. <br>
+    Privacy Policy | Terms of Use</j><br> 
+      <t>Copyright &copy; 2020 Sony Interactive Entertainment LLC.</t><br/>
+      
+      <p align="left" style="top:0px; position: relative; left:5px;"> Facebook </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://www.facebook.com/" target="_blank"> <img src="images/fb.png" width="30px"> </a> </p>
+      
+      <p align="left" style="top:0px; position: relative; left:5px;"> Instagram </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://www.instagram.com/" target="_blank"> <img src="images/in.png" width="30px"> </a> </p>
+
+      <p align="left" style="top:0px; position: relative; left:5px;"> Twitter </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://twitter.com/" target="_blank"> <img src="images/tw.png" width="30px"> </a> </p>
+      
+
+        <a href="index.html">|HOME|</a>
+        <a href="#">|ABOUT US|</a>
+        <a href="gallery.html">|GALLERY|</a>
+        <a href="blog.html">|BLOG|</a>
+        <a href="contact.html">|CONTACT|</a>
+  </div>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
