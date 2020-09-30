@@ -48,7 +48,7 @@ var phoneno = document.myform.phoneno.value;
 
     }
 
-  else if(address==""){
+  else if(phoneno==""){
 
       document.getElementById("errormsg").innerHTML="Phoneno is Required";
 
